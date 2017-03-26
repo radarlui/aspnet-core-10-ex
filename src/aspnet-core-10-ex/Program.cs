@@ -16,6 +16,7 @@ namespace aspnet_core_10_ex
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()
                 .UseStartup<Startup>()
+                .UseUrls("http://*:8080")
                 .Build();
 
             host.Run();
